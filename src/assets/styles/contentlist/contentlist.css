@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cmp-contentlist {
+  margin: 95px auto;
+}
+.cmp-contentlist * {
+  font-family: "Zen Kaku Gothic New";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=contentlist.css.map */

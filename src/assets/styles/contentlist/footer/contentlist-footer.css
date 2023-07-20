@@ -1,0 +1,21 @@
+.cmp-contentlist__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+.cmp-contentlist__footer .cmp-contentlist__footer-btn {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: #00A550;
+  border: 1px solid #00A550;
+  border-radius: 32px;
+  padding: 10px 36px;
+  transition: 300ms ease-in-out;
+}
+.cmp-contentlist__footer .cmp-contentlist__footer-btn:hover {
+  background-color: #00A550;
+  color: #FFFFFF;
+}/*# sourceMappingURL=contentlist-footer.css.map */

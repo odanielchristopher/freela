@@ -1,0 +1,56 @@
+
+//== Font
+
+$font-feather: "Feather";
+$font-family-primary: "Zen Kaku Gothic New";
+$font-family-secondary: "Elza Trial";
+$font-family-third: "DM Sans";
+$font-family:           "Zen Kaku Gothic New";
+$font-feather:          "Feather";
+$font-size:             16px;
+$font-height:           1.5;
+
+//== Color
+$white020: #FFFFFF1F;
+$white100:#FFFFFF;
+$white200: #F1F1F1;
+$white300: #EAEBEB;
+$black100:#000000;
+$green100:#00A550;
+$blue100:#DAF1F0;
+$blue200:#007CB6;
+$blue300:#041040;
+$blue400: #7ACDC8;
+$gray100:#D8D8D8;
+$gray200:#6F6F6F;
+$gray300:#1C1C1C;
+$gray400: "#1c1c1c1f";
+$gray500:#ffffff33;
+$red100:#E60012;
+$yellow100:#FFC703;
+$purple100:#261332;
+$orange100:#FB5600;
+$pink100:#F46C95;
+
+//== Normal mode
+$color-foreground:      #202020;
+$color-background:      #ECECEC;
+$color-link:            #2020E0;
+
+// Dark mode
+$color-foreground-dark: invert($color-foreground);
+$color-background-dark: invert($color-background);
+$color-link-dark:       invert($color-link);
+
+//== Mobile size
+$tablet-max-width: 1200px;
+$mobile-width: 769px;
+$phone-width: 426px;
+
+@mixin main-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}

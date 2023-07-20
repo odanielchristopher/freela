@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedules</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/styles/contentlist/contentlist.css">
+  <link rel="stylesheet" href="./assets/styles/contentlist/header/contentlist-header.css">
+  <link rel="stylesheet" href="./assets/styles/contentlist/main/contentlist-main.css">
+  <link rel="stylesheet" href="./assets/styles/contentlist/footer/contentlist-footer.css">
+  <link rel="stylesheet" href="./assets/styles/contentlist/main/availabletimes/availabletimes.css">
+  
+  <script src="./assets/scripts/shedulesDay.js" defer></script>
+</head>
+<body>
+  <section class="cmp-contentlist">
+    <header class="cmp-contentlist__header">
+      <h4 class="cmp-contentlist__header-title">Programação</h4>
+
+      <p class="cmp-contentlist__header-description">
+        Mauris eget consequat urna. Curabitur a nulla orci. In hac habitasse platea dictumst. Nulla scelerisque risus et mi facilisis, fringilla ipsum porta. 
+      </p>
+    </header>
+
+    <main class="cmp-contentlist__main">
+      <div class="cmp-contentlist__main-header">
+        <div class="cmp-main__buttons">
+          <a href="./schedulesMonth.html" class="cmp_buttons-btn">
+            Mês
+          </a>
+
+          <a href="./schedulesDay.html" class="cmp_buttons-btn cmp-btn-on">
+            Dia
+          </a>
+        </div>
+
+        <div class="cmp-main__filter">
+            <span>Filtro:</span>
+      
+            <div class="cmp-contentlist__filter--selection">
+              <label for="cmp-contentlist__filter--selection-month">
+                Mês:
+              </label>
+              <select name="" id="cmp-contentlist__filter--selection-month">
+                <option value="">Janeiro</option>
+                <option value="">Fevereiro</option>
+                <option value="">Março</option>
+                <option value="">Abril</option>
+                <option value="">Maio</option>
+                <option value="">Junho</option>
+                <option value="">Julho</option>
+                <option value="">Agosto</option>
+                <option value="">Setembro</option>
+                <option value="">Outubro</option>
+                <option value="">Dezembro</option>
+              </select>
+            </div>
+      
+            <div class="cmp-contentlist__filter--selection">
+              <label for="cmp-contentlist__filter--selection-day">
+                Dia:
+              </label>
+              <select name="" id="cmp-contentlist__filter--selection-day">
+                <option value="">01</option>
+                <option value="">02</option>
+                <option value="">03</option>
+                <option value="">04</option>
+                <option value="">05</option>
+                <option value="">06</option>
+              </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="cmp-contentlist__main-content_container">
+        <div class="cmp-contentlist__main-content">
+          
+          <div class="cmp-contentlist__main-content_navigation">
+            <button class="cpm-main__navigation-prevbnt cmp-main__navigation-btn">
+              <img src="./assets/imgs/arrow.png" alt="Left arrow">
+            </button>
+            <button class="cpm-main__navigation-nextbnt cmp-main__navigation-btn">
+              <img src="./assets/imgs/arrow.png" alt="Right arrow">
+            </button>
+  
+            <div class="cmp-main__navigation-wrapper">
+              <div class="line"></div>
+              <div class="cmp-main__navigation-list">
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input1" class="cmp-main__navigation-label cpm_main__label-on">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input1" checked>
+                </div>
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input2" class="cmp-main__navigation-label">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input2">
+                </div>
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input3" class="cmp-main__navigation-label">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input3">
+                </div>
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input4" class="cmp-main__navigation-label">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input4">
+                </div>
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input5" class="cmp-main__navigation-label">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input5">
+                </div>
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input6" class="cmp-main__navigation-label">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input6">
+                </div>
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input6" class="cmp-main__navigation-label">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input6">
+                </div>
+                <div class="cmp-main__navigation-list_item">
+                  <label for="cmp-main__navigation-input6" class="cmp-main__navigation-label">14:00 - 15:00</label>
+                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input6">
+                </div>
+                <!-- Adicione mais itens aqui, se necessário -->
+              </div>
+            </div>
+            
+            
+          </div>
+
+          <div class="cmp-contentlist__main-content_card">
+            <div class="cmp-contentlist__main-content_image">
+              <img src="./assets/imgs/woman-perfil.png" alt="Mulher">
+            </div>
+  
+            <div class="cmp-contentlist__main-content_text">
+              <h4 class="cmp-contentlist__main-content_title">
+                Clara Nunes
+              </h4>
+              <span class="cmp-contentlist__main-content_profession">
+                CEO da empresa XYZ
+              </span>
+  
+              <div class="cmp-contentlist__main-content_tag">
+                <span>
+                  assunto 02
+                </span>
+              </div>
+  
+              <p class="cmp-contentlist__main-content_description">
+                Nulla posuere sollicitudin mauris, vel consectetur diam efficitur vulputate. Integer risus diam, pellentesque sit amet nisl ac, ullamcorper tempor sem. Nunc tempus quis eros at scelerisque. Ut lobortis mauris nisi, vitae pellentesque mauris maximus sed. Donec venenatis ex finibus, vulputate purus eget, mattis lorem. Pellentesque arcu nisi, ullamcorper non scelerisque non.
+              </p>
+  
+              <a href="#" class="cmp-contentlist__main-content_btn">
+                Saiba mais
+              </a>
+  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+
+    <footer class="cmp-contentlist__footer">
+      <a href="#" class="cmp-contentlist__footer-btn">
+        Veja mais
+      </a>
+    </footer>
+  </section>
+</body>
+</html>

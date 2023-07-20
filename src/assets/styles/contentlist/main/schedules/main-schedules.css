@@ -1,0 +1,193 @@
+@charset "UTF-8";
+.cmp-contentlist__main-shedules {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 1350px;
+}
+@media (min-width: 1024px) {
+  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper {
+    justify-content: space-between;
+  }
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-main__schedule-list_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 20px;
+  margin: 0 auto;
+}
+@media (max-width: 1290px) {
+  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-main__schedule-list_cards {
+    grid-template-columns: 1fr;
+  }
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 24px;
+  max-width: 600px;
+  padding: 16px;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card:hover {
+  border: 1px solid #000000;
+}
+@media (max-width: 1024px) {
+  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card {
+    justify-content: center;
+    width: -moz-min-content;
+    width: min-content;
+  }
+}
+@media (max-width: 650px) {
+  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card {
+    max-width: 350px;
+  }
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-image {
+  min-width: 315px;
+  width: 50%;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-image img {
+  max-width: 95%;
+  height: 200px;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-image .cmp-schedules__card-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00A550;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-image .cmp-schedules__card-date span {
+  text-align: center;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-image .cmp-schedules__card-date span b {
+  font-size: 32px;
+  line-height: 100%;
+  display: block;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 240px;
+  padding: 0;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content .cmp-schedules__card-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content .cmp-schedules__card-description {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content .cmp-schedules__card-tag {
+  background: #FB5600;
+  padding: 0px 16px;
+  display: flex;
+  justify-content: center;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  border-radius: 60px;
+  padding: 4px 16px;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content .cmp-schedules__card-tag span {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FFFFFF;
+}
+.cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content .cmp-schedules__card-readmore {
+  background: none;
+  border: none;
+  max-width: 125px;
+  text-align: start;
+  font-size: 18px;
+  line-height: 30px;
+  color: #00A550;
+  text-decoration: underline;
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_prev-btn,
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEBEB;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_prev-btn {
+  left: 0px;
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_next-btn {
+  right: 0px;
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_next-btn img {
+  transform: rotate(180deg);
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* Ajuste a posição dos botões de rádio conforme necessário */
+  /* Esconda os botões de rádio */
+  /* Estilize os botões de rádio personalizados */
+  /* Estilize os botões de rádio personalizados quando selecionados */
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons input[type=radio] {
+  display: none;
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons input[type=radio] + label {
+  cursor: pointer;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border: 1px solid #000000;
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons input[type=radio]:checked + label {
+  width: 1.0625rem;
+  height: 1.0625rem;
+  border: 1px solid #00A550;
+  background-color: #00A550;
+}/*# sourceMappingURL=main-schedules.css.map */
