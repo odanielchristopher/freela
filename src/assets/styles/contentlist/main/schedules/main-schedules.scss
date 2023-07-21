@@ -7,6 +7,11 @@
   align-items: center;
   gap: 32px;
 
+  @media (min-width: 1291px) {
+    min-height: 541px;
+    justify-content: center;
+  }
+
   width: 100%;
 
   .cmp-main__schedules-wrapper {
@@ -16,10 +21,6 @@
     justify-content: center;
     max-width: 1350px;
 
-    @media (min-width: 1024px) {
-      justify-content: space-between;
-    }
-
     .cmp-main__schedule-list_cards {
 
       display: grid;
@@ -28,11 +29,17 @@
       margin: 0 auto;
 
       @media (max-width: 1290px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
+      @media (max-width: 1070px) {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+      }
 
-
+      @media (max-width: 730px) {
+        grid-template-columns: 1fr ;
+      }
 
     }
 
@@ -53,9 +60,10 @@
         border: 1px solid $black100;
       }
 
-      @media (max-width: 1024px) {
-        justify-content: center;
-        width: min-content;
+      @media (max-width: 1290px) {
+        flex-direction: column;
+        max-width: min-content;
+        padding-right: 0;
       }
 
       @media (max-width: 650px) {
@@ -108,6 +116,10 @@
         gap: 16px;
         max-width: 240px;
         padding: 0;
+
+        @media (max-width: 1290px) {
+          margin-left: 40px;
+        }
 
         .cmp-schedules__card-title {
           font-size: 24px;
@@ -193,12 +205,17 @@
     }
   }
 
-
-
   .cmp-contentlist__schedules_radio-buttons {
     display: flex;
     align-items: center;
     gap: 5px;
+
+    // max-width: 52px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     /* Ajuste a posição dos botões de rádio conforme necessário */
     /* Esconda os botões de rádio */
@@ -209,24 +226,23 @@
     /* Estilize os botões de rádio personalizados */
     input[type="radio"]+label {
       cursor: pointer;
-      width: .8125rem;
-      height: .8125rem;
+      min-width: .8125rem;
+      min-height: .8125rem;
       border-radius: 50%;
       background-color: transparent;
       transition: background-color 0.3s ease;
-
 
       border: 1px solid $black100;
     }
 
     /* Estilize os botões de rádio personalizados quando selecionados */
     input[type="radio"]:checked+label {
-
-      width: 1.0625rem;
-      height: 1.0625rem;
+      min-width: 1.0625rem;
+      min-height: 1.0625rem;
       border: 1px solid $green100;
       background-color: $green100;
     }
   }
+
 
 }

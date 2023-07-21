@@ -1,0 +1,13 @@
+.cmp-contentlist__home-container {
+  width: 90%;
+  height: 100vh;
+  margin: 5rem auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cmp-contentlist__home-container * {
+  font-family: "Zen Kaku Gothic New";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=home.css.map */

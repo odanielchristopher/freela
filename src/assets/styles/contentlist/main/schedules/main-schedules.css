@@ -7,17 +7,18 @@
   gap: 32px;
   width: 100%;
 }
+@media (min-width: 1291px) {
+  .cmp-contentlist__main-shedules {
+    min-height: 541px;
+    justify-content: center;
+  }
+}
 .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   max-width: 1350px;
-}
-@media (min-width: 1024px) {
-  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper {
-    justify-content: space-between;
-  }
 }
 .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-main__schedule-list_cards {
   display: grid;
@@ -26,6 +27,17 @@
   margin: 0 auto;
 }
 @media (max-width: 1290px) {
+  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-main__schedule-list_cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1070px) {
+  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-main__schedule-list_cards {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+@media (max-width: 730px) {
   .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-main__schedule-list_cards {
     grid-template-columns: 1fr;
   }
@@ -43,11 +55,12 @@
 .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card:hover {
   border: 1px solid #000000;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1290px) {
   .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card {
-    justify-content: center;
-    width: -moz-min-content;
-    width: min-content;
+    flex-direction: column;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    padding-right: 0;
   }
 }
 @media (max-width: 650px) {
@@ -95,6 +108,11 @@
   gap: 16px;
   max-width: 240px;
   padding: 0;
+}
+@media (max-width: 1290px) {
+  .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content {
+    margin-left: 40px;
+  }
 }
 .cmp-contentlist__main-shedules .cmp-main__schedules-wrapper .cmp-schedules__card .cmp-schedules__card-content .cmp-schedules__card-title {
   font-size: 24px;
@@ -168,26 +186,30 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  overflow-x: auto;
   /* Ajuste a posição dos botões de rádio conforme necessário */
   /* Esconda os botões de rádio */
   /* Estilize os botões de rádio personalizados */
   /* Estilize os botões de rádio personalizados quando selecionados */
+}
+.cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons::-webkit-scrollbar {
+  display: none;
 }
 .cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons input[type=radio] {
   display: none;
 }
 .cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons input[type=radio] + label {
   cursor: pointer;
-  width: 0.8125rem;
-  height: 0.8125rem;
+  min-width: 0.8125rem;
+  min-height: 0.8125rem;
   border-radius: 50%;
   background-color: transparent;
   transition: background-color 0.3s ease;
   border: 1px solid #000000;
 }
 .cmp-contentlist__main-shedules .cmp-contentlist__schedules_radio-buttons input[type=radio]:checked + label {
-  width: 1.0625rem;
-  height: 1.0625rem;
+  min-width: 1.0625rem;
+  min-height: 1.0625rem;
   border: 1px solid #00A550;
   background-color: #00A550;
 }/*# sourceMappingURL=main-schedules.css.map */

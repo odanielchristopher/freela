@@ -5,7 +5,7 @@
   width: 100%;
   padding: 0 24px;
 }
-@media (max-width: 630px) {
+@media (max-width: 730px) {
   .cmp-contentlist__main {
     padding: 0;
   }
@@ -25,7 +25,7 @@
     margin: 0 0 24px 0;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 730px) {
   .cmp-contentlist__main .cmp-contentlist__main-header {
     justify-content: center;
     gap: 1rem;
