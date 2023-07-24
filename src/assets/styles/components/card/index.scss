@@ -1,0 +1,125 @@
+@import '../../variables';
+
+.cmp-schedules__card {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 24px;
+
+
+  max-width: 600px;
+  padding: 1rem;
+
+  &:hover {
+    border: 1px solid $black100;
+  }
+
+  .cmp-schedules__card-image {
+    min-width: 315px;
+    width: 50%;
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+
+    img {
+      max-width: 95%;
+      height: 200px;
+    }
+
+    .cmp-schedules__card-date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $green100;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+
+      position: absolute;
+      right: 0;
+      top: 15px;
+
+      span {
+        text-align: center;
+        font-size: 20px;
+        line-height: 100%;
+        color: $white100;
+
+        b {
+          font-size: 32px;
+          line-height: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .cmp-schedules__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 240px;
+    padding: 0;
+
+    .cmp-schedules__card-title {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 700;
+      color: $black100;
+    }
+
+    .cmp-schedules__card-description {
+      font-size: 18px;
+      line-height: 30px;
+
+      color: $black100;
+    }
+
+    .cmp-schedules__card-tag {
+      background: $orange100;
+      padding: 0px 16px;
+      // max-width: 110px;
+      display: flex;
+      justify-content: center;
+      max-width: min-content;
+      border-radius: 60px;
+      padding: 4px 16px;
+
+      span {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $white100;
+      }
+    }
+
+    .cmp-schedules__card-readmore {
+      background: none;
+      border: none;
+      max-width: 125px;
+      text-align: start;
+      font-size: 18px;
+      line-height: 30px;
+      color: $green100;
+      text-decoration: underline;
+    }
+  } 
+
+  @media (max-width: 1290px) {
+    max-width: min-content;
+    padding: .5rem;
+
+    .cmp-schedules__card-content {
+      margin-left: 40px;
+    }
+  }
+}

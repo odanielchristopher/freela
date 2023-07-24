@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+.cmp-contentlist__main-carrossel_btn {
+  padding: 1.125rem;
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  background-color: $white300;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  z-index: 2;
+
+  &.cmp-contentlist__carrossel_prev-btn {
+    left: 0;
+  }
+
+  &.cmp-contentlist__carrossel_next-btn {
+    right: 0;
+
+    transform: rotate(180deg);
+  }
+}
