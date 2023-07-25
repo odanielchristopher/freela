@@ -1,0 +1,149 @@
+@charset "UTF-8";
+.cmp-contentlist__main-content_navigation {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  right: 0;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.3;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-prevbnt {
+  top: 0;
+  transform: rotate(90deg);
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-nextbnt {
+  transform: rotate(-90deg);
+  bottom: 0;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3.381rem;
+  max-height: 450px;
+  overflow-y: auto;
+  width: 180px;
+  padding-right: 10px;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 1.25rem;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item .cmp-main__navigation_radio {
+  /* Tamanho e borda padrão */
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  /* Ocultar visualmente o input padrão */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item .cmp-main__navigation_radio:checked {
+  /* Estilo quando o input estiver selecionado */
+  background-color: #00A550;
+  margin: 0;
+  transform: scale(1.46);
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item .cmp-main__navigation_radio:checked ~ .cmp-main__navigation-label {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item .cmp-main__navigation_radio:hover {
+  /* Estilo quando o mouse estiver em cima do input */
+  background-color: #00A550;
+  margin: 0;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item .cmp-main__navigation_radio:hover ~ .cmp-main__navigation-label {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+}
+.cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item .cmp-main__navigation_radio ~ .cmp-main__navigation-label {
+  font-size: 1rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.cmp-contentlist__main-content_navigation .line {
+  position: absolute;
+  /* Posiciona a linha no meio verticalmente */
+  right: 18px;
+  width: 2px;
+  height: 81%;
+  overflow-y: auto;
+  /* Altura da linha */
+  background-color: #6F6F6F;
+  /* Cor da linha */
+  pointer-events: none;
+  /* Evita que a linha bloqueie eventos do mouse */
+  z-index: -1;
+  /* Coloca a linha atrás dos elementos de lista */
+}
+@media (max-width: 1130px) {
+  .cmp-contentlist__main-content_navigation .line {
+    display: none;
+  }
+}
+@media (max-width: 1130px) {
+  .cmp-contentlist__main-content_navigation {
+    position: relative;
+    width: auto;
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper {
+    flex-direction: row;
+    width: 85%;
+    max-width: 620px;
+    gap: 1rem;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation_radio {
+    display: none;
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-prevbnt {
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-nextbnt {
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 420px) {
+  .cmp-contentlist__main-content_navigation {
+    position: relative;
+    width: auto;
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper {
+    flex-direction: row;
+    width: 80%;
+  }
+}/*# sourceMappingURL=index.css.map */

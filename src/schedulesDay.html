@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="./assets/styles/contentlist/header/contentlist-header.css">
   <link rel="stylesheet" href="./assets/styles/contentlist/main/contentlist-main.css">
   <link rel="stylesheet" href="./assets/styles/contentlist/footer/contentlist-footer.css">
-  <link rel="stylesheet" href="./assets/styles/contentlist/main/availabletimes/availabletimes.css">
+  <link rel="stylesheet" href="./assets/styles/contentlist/main/availabletimes/index.css">
+  <link rel="stylesheet" href="./assets/styles/contentlist/main/availabletimes/navigation/index.css">
+  <link rel="stylesheet" href="./assets/styles/contentlist/main/availabletimes/cardlist/index.css">
   
   <script src="./assets/scripts/shedulesDay.js" defer></script>
 </head>
@@ -78,59 +80,57 @@
         </div>
       </div>
 
-      <div class="cmp-contentlist__main-content_container">
-        <div class="cmp-contentlist__main-content">
-          
-          <div class="cmp-contentlist__main-content_navigation">
-            <button class="cpm-main__navigation-prevbnt cmp-main__navigation-btn">
-              <img src="./assets/imgs/arrow.png" alt="Left arrow">
-            </button>
-            <button class="cpm-main__navigation-nextbnt cmp-main__navigation-btn">
-              <img src="./assets/imgs/arrow.png" alt="Right arrow">
-            </button>
-  
-            <div class="cmp-main__navigation-wrapper">
-              <div class="line"></div>
-              <div class="cmp-main__navigation-list">
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input1" class="cmp-main__navigation-label cpm_main__label-on">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input1" checked>
-                </div>
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input2" class="cmp-main__navigation-label">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input2">
-                </div>
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input3" class="cmp-main__navigation-label">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input3">
-                </div>
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input4" class="cmp-main__navigation-label">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input4">
-                </div>
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input5" class="cmp-main__navigation-label">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input5">
-                </div>
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input6" class="cmp-main__navigation-label">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input6">
-                </div>
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input6" class="cmp-main__navigation-label">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input6">
-                </div>
-                <div class="cmp-main__navigation-list_item">
-                  <label for="cmp-main__navigation-input6" class="cmp-main__navigation-label">14:00 - 15:00</label>
-                  <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input6">
-                </div>
-                <!-- Adicione mais itens aqui, se necessário -->
-              </div>
-            </div>
-            
-            
-          </div>
+      <div class="cmp-contentlist__main-content">
+        
+        <div class="cmp-contentlist__main-content_navigation">
+          <button class="cpm-main__navigation-prevbnt cmp-main__navigation-btn">
+            <img src="./assets/imgs/arrow.png" alt="Left arrow">
+          </button>
+          <button class="cpm-main__navigation-nextbnt cmp-main__navigation-btn">
+            <img src="./assets/imgs/arrow.png" alt="Right arrow">
+          </button>
 
+          <div class="line"></div>
+
+          <div class="cmp-main__navigation-wrapper">
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input1" checked>
+              <label for="cmp-main__navigation-input1" class="cmp-main__navigation-label cpm_main__label-on">14:00 - 15:00</label>
+            </div>
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input2">
+              <label for="cmp-main__navigation-input2" class="cmp-main__navigation-label">14:00 - 15:00</label>
+            </div>
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input3">
+              <label for="cmp-main__navigation-input3" class="cmp-main__navigation-label">14:00 - 15:00</label>
+            </div>
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input4">
+              <label for="cmp-main__navigation-input4" class="cmp-main__navigation-label">14:00 - 15:00</label>
+            </div>
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input5">
+              <label for="cmp-main__navigation-input5" class="cmp-main__navigation-label">14:00 - 15:00</label>
+            </div>
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input6">
+              <label for="cmp-main__navigation-input6" class="cmp-main__navigation-label">14:00 - 15:00</label>
+            </div>
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input7">
+              <label for="cmp-main__navigation-input7" class="cmp-main__navigation-label">14:00 - 15:00</label>
+            </div>
+            <div class="cmp-main__navigation-list_item">
+              <input type="radio" class="cmp-main__navigation_radio" name="cmp-main__navigation-input" id="cmp-main__navigation-input8">
+              <label for="cmp-main__navigation-input8" class="cmp-main__navigation-label">14:00 - 15:00</label>
+            </div>
+            <!-- Adicione mais itens aqui, se necessário -->
+          </div>
+        </div>
+
+        
+        <div class="cmp-contentlist__main-content_card-list">
           <div class="cmp-contentlist__main-content_card">
             <div class="cmp-contentlist__main-content_image">
               <img src="./assets/imgs/woman-perfil.png" alt="Mulher">
@@ -160,8 +160,9 @@
   
             </div>
           </div>
-          
+
         </div>
+        
       </div>
     </main>
 

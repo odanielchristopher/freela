@@ -1,4 +1,4 @@
-@import '../../../variables';
+@import '../../variables';
 
 .cmp-contentlist__main-carrossel_btn {
   padding: 1.125rem;
@@ -16,6 +16,7 @@
 
   position: absolute;
   z-index: 2;
+  opacity: 0.8;
 
   &.cmp-contentlist__carrossel_prev-btn {
     left: 0;

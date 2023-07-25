@@ -19,7 +19,7 @@ function updateCarousel() {
     carouseSlidePercentage = 102.45;
   } else {
     numberCards = 1;
-    carouseSlidePercentage = 105.84;
+    carouseSlidePercentage = 105.68;
   }
 
   const carouselContainer = document.querySelector('.cmp-contentlist__main-carrossel_wrapper');

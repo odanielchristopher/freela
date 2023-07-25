@@ -11,6 +11,7 @@
   align-items: center;
   position: absolute;
   z-index: 2;
+  opacity: 0.8;
 }
 .cmp-contentlist__main-carrossel_btn.cmp-contentlist__carrossel_prev-btn {
   left: 0;
