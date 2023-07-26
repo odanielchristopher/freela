@@ -53,7 +53,7 @@
   width: 1.25rem;
   height: 1.25rem;
   border: 1px solid #000000;
-  background-color: #FFFFFF;
+  background-color: #DAF1F0;
   border-radius: 50%;
   /* Ocultar visualmente o input padrão */
   appearance: none;
@@ -76,6 +76,7 @@
   /* Estilo quando o mouse estiver em cima do input */
   background-color: #00A550;
   margin: 0;
+  transform: scale(1.46);
 }
 .cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper .cmp-main__navigation-list_item .cmp-main__navigation_radio:hover ~ .cmp-main__navigation-label {
   font-size: 1.5rem;

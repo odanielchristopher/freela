@@ -66,7 +66,7 @@
         width: 1.25rem;
         height: 1.25rem;
         border: 1px solid $black100;
-        background-color: $white100;
+        background-color: $blue100;
         border-radius: 50%;
 
         /* Ocultar visualmente o input padrão */
@@ -93,6 +93,7 @@
           /* Estilo quando o mouse estiver em cima do input */
           background-color: $green100;
           margin: 0;
+          transform: scale(1.46);
 
           &~.cmp-main__navigation-label {
             font-size: 1.5rem;

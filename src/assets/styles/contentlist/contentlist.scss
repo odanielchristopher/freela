@@ -6,6 +6,7 @@ body {
 }
 
 .cmp-contentlist {
+  position: relative;
   * {
     font-family: $font-family-primary;
     box-sizing: border-box;
@@ -14,4 +15,31 @@ body {
   }
 
   margin: 95px auto;
+
+  .elipse {
+    position: absolute;
+    top: 100px;
+    width: 850px;
+    height: 850px;
+    right: -13%;
+    background-color: $blue100;
+    z-index: -3;
+    border-radius: 50%;
+
+    @media (max-width: 1130px) {
+      right: -20%;
+    }
+
+    @media (max-width: 820px) {
+      right: -60%;
+    }
+
+    @media (max-width: 600px) {
+      right: -100%;
+    }
+
+    @media (max-width: 500px) {
+      right: -130%;
+    }
+  }
 }

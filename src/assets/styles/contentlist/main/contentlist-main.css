@@ -50,6 +50,7 @@
   line-height: 30px;
   text-decoration: none;
   color: #00A550;
+  background-color: #FFFFFF;
   transition: 300ms ease-in-out;
 }
 .cmp-contentlist__main .cmp-contentlist__main-header .cmp-main__buttons .cmp_buttons-btn:hover {
