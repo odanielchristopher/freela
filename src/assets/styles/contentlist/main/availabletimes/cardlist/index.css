@@ -10,6 +10,7 @@
 .cmp-contentlist__main-content_card .cmp-contentlist__main-content_image {
   width: 100%;
   max-width: 500px;
+  min-width: 336px;
 }
 .cmp-contentlist__main-content_card .cmp-contentlist__main-content_image img {
   width: 100%;
@@ -80,6 +81,9 @@
     width: min-content;
     padding: 0 24px;
     max-height: none;
+  }
+  .cmp-contentlist__main-content_card .cmp-contentlist__main-content_description {
+    width: 336px;
   }
 }
 

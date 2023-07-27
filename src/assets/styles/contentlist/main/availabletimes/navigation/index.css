@@ -113,38 +113,68 @@
   .cmp-contentlist__main-content_navigation {
     position: relative;
     width: auto;
+    height: 50px;
   }
   .cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper {
     flex-direction: row;
     width: 85%;
     max-width: 620px;
+    height: 100%;
+    padding: 0;
     gap: 1rem;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px; /* Largura do efeito de desaparecimento */
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, transparent, #DAF1F0);
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px; /* Largura do efeito de desaparecimento */
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to left, transparent, #FFFFFF);
   }
   .cmp-contentlist__main-content_navigation .cmp-main__navigation_radio {
     display: none;
   }
   .cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-prevbnt {
-    left: 10px;
+    left: 0px;
     top: 0;
     bottom: 0;
     transform: rotate(0deg);
+    width: 7.5%;
   }
   .cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-nextbnt {
-    right: 10px;
+    right: 0px;
     top: 0;
     bottom: 0;
     transform: rotate(180deg);
+    width: 7.5%;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 640px) {
   .cmp-contentlist__main-content_navigation {
-    position: relative;
-    width: auto;
+    width: 375px;
   }
   .cmp-contentlist__main-content_navigation .cmp-main__navigation-wrapper {
     flex-direction: row;
-    width: 80%;
+    width: 88%;
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-prevbnt {
+    width: 5%;
+  }
+  .cmp-contentlist__main-content_navigation .cmp-main__navigation-btn.cpm-main__navigation-nextbnt {
+    width: 5%;
   }
 }/*# sourceMappingURL=index.css.map */

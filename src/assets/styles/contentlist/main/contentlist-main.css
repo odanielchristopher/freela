@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   max-width: 650px;
   gap: 85px;
-  margin: 50px;
+  margin: 0 0 50px 59px;
 }
 @media (max-width: 1024px) {
   .cmp-contentlist__main .cmp-contentlist__main-header {
