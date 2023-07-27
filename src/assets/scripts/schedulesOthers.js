@@ -16,7 +16,7 @@ function updateCarousel() {
     carouseSlidePercentage = 100;
   } else if (windowWidth > 820) {
     numberCards = 2;
-    carouseSlidePercentage = 102.45;
+    carouseSlidePercentage = 102.3;
   } else {
     numberCards = 1;
     carouseSlidePercentage = 105.68;
