@@ -31,7 +31,7 @@ function updateCarousel() {
   let currentCardIndex = 0;
 
   function showCards(startIndex) {
-    carouselContainer.style.transition = 'transform 0.5s ease-in-out'; // Adiciona transição para o carrossel
+    carouselContainer.style.transition = 'transform 500ms ease-in-out'; // Adiciona transição para o carrossel
     carouselContainer.style.transform = `translateX(-${startIndex * (carouseSlidePercentage / numberCards)}%)`;
   }
 
